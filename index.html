@@ -186,7 +186,7 @@
 
     // Accessing a specific document
     function fetchAndDisplayRatings() {
-      const docRef = doc(db, 'rating', '8QS9CThBbgrEa9GGcq6e'); // Replace with your actual game document ID
+      const docRef = doc(db, 'rating', 'eazHF8OKaHabQPQic4Kt'); // Replace with your actual game document ID
 
       getDoc(docRef).then((docSnap) => {
         if (docSnap.exists()) {
@@ -210,7 +210,7 @@
     fetchAndDisplayRatings();
     function vote(itemId) {
       const arrayIndex = parseInt(itemId, 10) - 1; // Convert item-id to an array index
-      const docRef = doc(db, 'rating', '8QS9CThBbgrEa9GGcq6e'); // Replace with your actual game document ID
+      const docRef = doc(db, 'rating', 'eazHF8OKaHabQPQic4Kt'); // Replace with your actual game document ID
 
       getDoc(docRef).then((docSnap) => {
         if (docSnap.exists()) {
